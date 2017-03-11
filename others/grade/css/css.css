@@ -1,0 +1,19 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+table {
+	margin: 0 auto;
+	text-align: center;
+}
+table caption {
+	font-size: 30px;
+}
+table td {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+.odd {
+	background-color: #c0c;
+}
