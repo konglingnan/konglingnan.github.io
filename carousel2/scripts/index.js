@@ -149,6 +149,7 @@ function play() {
 			// 点击小图切换大图
 			lis[i].onclick = function() {
 				var thisIndex = this.getAttribute("index");
+				if(thisIndex==now) return;
 				now = moveBySmall(thisIndex);
 			};
 		}	

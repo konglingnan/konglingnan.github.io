@@ -40,6 +40,29 @@ textarea {
 	font-family: "Helvetica", "Arial", sans-serif;
 }
 
+/*about关于开始*/
+#ab li {
+	font-size: 16px;
+	padding: 10px;
+	list-style: none;
+}
+#ab1 h2,
+#ab2 h2 {
+	font-weight: bold;
+}
+#ab1,
+#ab2 {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+#ab1 p,
+#ab2 p {
+	font-size: 18px;
+	line-height: 36px;
+}
+/*about关于结束*/
+
 /*photos图片库开始*/
 #description {
 	font-size: 1.8em;

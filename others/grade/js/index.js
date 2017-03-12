@@ -11,18 +11,18 @@ function stripeTables(){
 	if(!document.getElementsByTagName) return false;
 
 	var tables = document.getElementsByTagName("table");
-	var odd;
+	var even;
 	var rows = [];
 	for(var i=0; i<tables.length; i++){
-		odd = false;
+		even = true;
 		rows = tables[i].getElementsByTagName("tr");
 		//改一个变一次odd值
 		for(var j=0; j<rows.length; j++){
-			if(odd == true){
-				addClass(rows[j], "odd");
-				odd = false;
+			if(even == true){
+				addClass(rows[j], "even");
+				even = false;
 			}else {
-				odd = true;
+				even = true;
 			}
 		}
 	}

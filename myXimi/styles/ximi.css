@@ -202,19 +202,20 @@
 		display: inline-block;
 		width: 520px;
 		height: 210px;
-		background-color: pink;
+		background: url(../images/big.png) no-repeat 0 -30px;
 		margin: 0px 10px;
 		position: relative;
 	}
 
 	.opa {
-		width: 520px;
+		width: 490px;
 		height: 30px;
+		padding-left: 20px;
+		color: #fff;
+		line-height: 30px;
 		position: absolute;
 		bottom: 0px;
-		background-color: gray;
-		opacity: 0.5;
-		filter:Alpha(opacity=50);/*兼容IE6等浏览器*/
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 /*中间内容区结束*/
 

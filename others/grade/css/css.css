@@ -17,11 +17,11 @@ table caption {
 table th,
 table td {
 	padding: 0 80px;
-	border: 1px solid #888;
+	border: 1px solid #fff;
 }
 table th {
-	background-color: #3399FF;
+	background-color: #66A9BC;
 }
-.odd {
-	background-color: #99CCFF;
+.even {
+	background-color: #D4E9EE;
 }
