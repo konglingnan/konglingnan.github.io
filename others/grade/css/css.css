@@ -1,19 +1,27 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 40px;
 }
 table {
 	margin: 0 auto;
+	height: 500px;
 	text-align: center;
+	border: 1px solid #666;
+	border-collapse: collapse;
 }
 table caption {
 	font-size: 30px;
+	padding: 20px;
 }
+table th,
 table td {
-	border-collapse: collapse;
-	border: 1px solid #000;
+	padding: 0 80px;
+	border: 1px solid #888;
+}
+table th {
+	background-color: #3399FF;
 }
 .odd {
-	background-color: #c0c;
+	background-color: #99CCFF;
 }
