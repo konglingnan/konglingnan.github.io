@@ -45,15 +45,11 @@ function sendCity() {
 	var cityArea = getByClass(body, "side-nav-l-city")[0];
 	var cityUl = cityArea.getElementsByTagName("ul")[0];
 	// 创建<li><a href="javascript:void(0)">"城市"</a></li>
+	var citysStr = "";
 	for(var i=0; i<citys.length; i++){
-		var cityLi = document.createElement("li");
-		var cityA = document.createElement("a");
-		cityA.setAttribute("href", "javascript:void(0)");
-		cityA.innerHTML = citys[i];
-		cityLi.appendChild(cityA);
-		cityUl.appendChild(cityLi);
-
+		citysStr += "<li><a href=\"javascript:void(0)\">" + citys[i] + "</a></li>";
 	}
+	cityUl.innerHTML = citysStr;
 
 	var cityLis = cityUl.getElementsByTagName("li");
 	// 初始化
