@@ -178,7 +178,7 @@ function slider() {
 		};
 		areaNode.onmouseout=function() {
 			autoTimer = setInterval(func, 2000);
-		};	
+		};
 	}
 }
 // 轮播图end
