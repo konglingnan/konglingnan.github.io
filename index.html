@@ -8,7 +8,6 @@
 			transform: translateY(-50%);
 			-ms-transform: translateY(-50%);
 			-webkit-transform: translateY(-50%);
-			font-size: 70px;
 			text-align: center;
 			color: #fff;
 			text-shadow: 4px 4px 15px #333;
@@ -18,6 +17,29 @@
 <body oncontextmenu="return false;" onselectstart="return false">
 	
 	<h1>Welcome to my world!</h1>
+
+	<script type="text/javascript">
+		var text = document.getElementsByTagName('h1')[0];
+
+		text.style.transform = 'rotate(0deg)';
+		text.style.fontSize = '0px';
+		var r = 0,
+			s = 0,
+			rSpeed = 24,
+			sSpeed = 4;
+		var si = setInterval(function() {
+			r += rSpeed;
+			s += sSpeed;
+			if(r >= 360 || s >= 60) {
+				r = 360;
+				s = 60;
+				clearInterval(si);
+			}
+			text.style.transform = 'rotate('+r+'deg)';
+			text.style.fontSize = s+'px';
+		}, 40);
+
+	</script>
 
 </body>
 </html>
