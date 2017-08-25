@@ -20,13 +20,12 @@
 
 	<script type="text/javascript">
 		var text = document.getElementsByTagName('h1')[0];
-
 		text.style.transform = 'rotate(0deg)';
 		text.style.fontSize = '0px';
 		var r = 0,
-			s = 0,
-			rSpeed = 24,
-			sSpeed = 4;
+		    s = 0,
+		    rSpeed = 18,
+		    sSpeed = 3;
 		var si = setInterval(function() {
 			r += rSpeed;
 			s += sSpeed;
@@ -37,9 +36,7 @@
 			}
 			text.style.transform = 'rotate('+r+'deg)';
 			text.style.fontSize = s+'px';
-		}, 40);
-
+		}, 30);
 	</script>
-
 </body>
 </html>
